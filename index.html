@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  <title>Oscar Box - Coding Tuition</title>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Oscar Box - Coding Tuition</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#lessons">Lessons</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Coding & Python Tuition</h1>
+    <p>Helping KS3 & GCSE students learn coding confidently through clear teaching, hands-on projects, and real understanding.</p>
+    <div class="btn-primary">Book Free First Session</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I'm Oscar, an A-Level Computer Science student with experience building real coding projects and teaching Python fundamentals. My lessons focus on making coding simple, logical, and enjoyable - no stress, no confusion.</p>
+    </div>
+  </section>
+
+  <!-- LESSONS -->
+  <section id="lessons">
+    <h2>What I Teach</h2>
+
+    <div class="card">
+      <h3>Beginner Coding (Ages 9–13)</h3>
+      <p>Scratch, Python basics, small games, creative coding projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>KS3 Python</h3>
+      <p>Variables, loops, IF statements, functions, and mini projects to build confidence.</p>
+    </div>
+
+    <div class="card">
+      <h3>GCSE Computer Science</h3>
+      <p>Exam-style Python problems, algorithms, pseudocode, logic, file handling, subroutines, and data structures.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="card">
+      <h3>Online - £15/hr</h3>
+      <p>1:1 structured lessons with guided practice and mini projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>In-Person - £18/hr</h3>
+      <p>Local sessions with hands-on support and extra guidance.</p>
+      <p><i>Please note in-person lessons are only available in and around the Gloucester area.</i></p>
+    </div>
+
+    <p><i>First lesson is free so students can see if it's the right fit.</i></p>
+  </section>
+
+  <!-- CONTACT (EXPANDING BOX) -->
+  <section id="contact">
+    <h2>Contact and Booking</h2>
+
+    <button class="expand-btn" onclick="toggleContact()">Show Contact Info</button>
+    <div class="contact-box" id="contactBox">
+      <h4 style="margin-top: 0px;" style="margin-bottom: 15px;">Availability:</h4>
+      <p style="margin: 5px 0;">Tuesday, Wednesday, Friday:</p>
+      <p style="margin: 2px 0;"> - Available between 5:00 PM & 7:00PM</p>
+      <br>
+      <p style="margin: 5px 0;">Saturday:</p>
+      <p style="margin: 2px 0;"> - Available between 10:00 AM & 3:00 PM</p>  
+      <p style="margin: 5px 0;">Email: <b><a href="mailto:oscarnbox@gmail.com">oscarnbox@gmail.com</a></b></p>
+      <p>Please email with any inquiries or about booking a lesson.</p>
+    </div>
+  </section>
+
+
+
+  <script>
+    function toggleContact() {
+      document.getElementById("contactBox").classList.toggle("open");
+    }
+  </script>
+
+  <!-- Booking Section 
+  <section id="booking" class="booking-section">
+    <h2>Book a Session</h2>
+    <p>Select a time that works for you. My availability updates automatically.</p>
+
+    <div class="calendly-container">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/oscarnbox/1-hour-coding-lesson" style="min-width:320px;height:700px;"></div>
+    </div>
+
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+  -->
+  
+  
+  <footer>
+    © 2025 Oscar Box - Coding Tuition<br />Website built by me.
+  </footer>
+
+</body>
+
+<script>
+// Simple animation for expanding cards
+const cards = document.querySelectorAll('.feature-card');
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('expanded');
+  });
+});
+
+// Smooth scroll for nav links
+const links = document.querySelectorAll('nav a');
+links.forEach(link => {
+  link.addEventListener('click', e => {
+    if (link.hash) {
+      e.preventDefault();
+      document.querySelector(link.hash).scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+
+</html>
