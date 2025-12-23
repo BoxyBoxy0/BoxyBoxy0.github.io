@@ -17,7 +17,9 @@
       <a href="#about">About</a>
       <a href="#lessons">Lessons</a>
       <a href="#pricing">Pricing</a>
+      <a href="#how-it-works">How It Works</a>
       <a href="#contact">Contact</a>
+
     </div>
   </nav>
 
@@ -25,7 +27,10 @@
   <div class="hero">
     <h1>Coding & Python Tuition</h1>
     <p>Helping KS3 & GCSE students learn coding confidently through clear teaching, hands-on projects, and real understanding.</p>
-    <div class="btn-primary">Book Free First Session</div>
+    <div class="btn-primary" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+    Book Free First Session
+    </div>
+
   </div>
 
   <!-- ABOUT -->
@@ -61,13 +66,62 @@
     <h2>Pricing</h2>
 
     <div class="card">
+      <h3>Online - £15/hr</h3>
+      <p>1:1 structured lessons with guided practice and mini projects.</p>
+    </div>
+
+    <div class="card">
       <h3>In-Person - £18/hr</h3>
-      <p>Local sessions with hands-on support and guidance.</p>
+      <p>Local sessions with hands-on support and extra guidance.</p>
       <p><i>Please note in-person lessons are only available in and around the Gloucester area.</i></p>
     </div>
 
     <p><i>First lesson is free so students can see if it's the right fit.</i></p>
   </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <h2>How Online Lessons Work</h2>
+
+    <div class="card">
+      <h3>1. What students need</h3>
+      <p>
+        • A laptop or desktop computer (Windows, Mac, or Chromebook)<br />
+        • A stable internet connection<br />
+        • Zoom (free – no paid account required)
+      </p>
+      <p><i>Tablets and phones are not suitable for coding lessons.</i></p>
+    </div>
+
+    <div class="card">
+      <h3>2. Before the lesson</h3>
+      <p>
+        After booking, I’ll send a short email with everything needed to get started.
+        Students simply:
+        <br />• Join the Zoom call using the provided link
+        <br />• Open a browser-based Python editor (no downloads required)
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3. During the lesson</h3>
+      <p>
+        Lessons are 1:1 and interactive. Students share their screen while coding,
+        and I guide them step-by-step through examples and problems.
+        <br /><br />
+        Sessions focus on understanding and confidence — not rushing through content.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>4. After the lesson</h3>
+      <p>
+        By the end of each session, students know exactly what they’ve learned and
+        what comes next. Optional small practice tasks can be provided on request.
+      </p>
+    </div>
+  </section>
+
 
   <!-- CONTACT (EXPANDING BOX) -->
   <section id="contact">
@@ -94,6 +148,18 @@
     }
   </script>
 
+  <!-- Booking Section 
+  <section id="booking" class="booking-section">
+    <h2>Book a Session</h2>
+    <p>Select a time that works for you. My availability updates automatically.</p>
+
+    <div class="calendly-container">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/oscarnbox/1-hour-coding-lesson" style="min-width:320px;height:700px;"></div>
+    </div>
+
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+  -->
   
   
   <footer>
